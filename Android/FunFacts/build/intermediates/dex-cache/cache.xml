@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/steve/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/13.0.0/support-v4-13.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3fe75433da602500cc71fcc1c46e5550291dd45d">
+        <dex dex="/Users/steve/Dropbox (Mixpanel)/Code/SE_Knowledge/Android/FunFacts/app/build/intermediates/pre-dexed/debug/support-v4-13.0.0-75511b7d3186e111dd08840a41b55df8d049b3b9.jar" />
+    </item>
+    <item
+        jar="/Users/steve/Dropbox (Mixpanel)/Code/SE_Knowledge/Android/FunFacts/app/build/intermediates/exploded-aar/com.mixpanel.android/mixpanel-android/4.5.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4fab23a76732ffb2cbfb6aeaafc1d2491cb02e80">
+        <dex dex="/Users/steve/Dropbox (Mixpanel)/Code/SE_Knowledge/Android/FunFacts/app/build/intermediates/pre-dexed/debug/classes-232bb6f89c5359f169ca5eadcaef36c5a9f01bef.jar" />
+    </item>
+    <item
+        jar="/Users/steve/Dropbox (Mixpanel)/Code/SE_Knowledge/Android/FunFacts/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/3.1.59/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2dd7b1a9ea65bb03d9cd16df777eeaf537a1fc81">
+        <dex dex="/Users/steve/Dropbox (Mixpanel)/Code/SE_Knowledge/Android/FunFacts/app/build/intermediates/pre-dexed/debug/classes-0c2dd734b8d24f2598d9b9b968f640e3dc916d63.jar" />
+    </item>
+
+</items>

@@ -7,16 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import com.mixpanel.android.mpmetrics.MixpanelAPI;
+
+
 
 
 public class FunFactsActivity extends Activity {
 
     public static final String TAG = FunFactsActivity.class.getSimpleName();
-    MixpanelAPI mixpanel = MixpanelAPI.getInstance(this, "orienwu");
-
-    mMixpanel.track("app open", null);
 
     private FactBook mFactBook = new FactBook();
     private ColorWheel mColorWheel = new ColorWheel();
@@ -25,6 +23,11 @@ public class FunFactsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fun_facts);
+
+        MixpanelAPI mMixpanel = MixpanelAPI.getInstance(this, "8950dac216646efa64092d982b5403ba");
+
+        mMixpanel.track("app open", null);
+        mMixpanel.flush();
 
         // Declare our View variables and assign the the Views from the layout file
         final TextView factLabel = (TextView) findViewById(R.id.factTextView);
