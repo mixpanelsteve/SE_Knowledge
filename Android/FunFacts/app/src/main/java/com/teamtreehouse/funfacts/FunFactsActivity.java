@@ -8,10 +8,15 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
+
 
 public class FunFactsActivity extends Activity {
 
     public static final String TAG = FunFactsActivity.class.getSimpleName();
+    MixpanelAPI mixpanel = MixpanelAPI.getInstance(this, "orienwu");
+
+    mMixpanel.track("app open", null);
 
     private FactBook mFactBook = new FactBook();
     private ColorWheel mColorWheel = new ColorWheel();

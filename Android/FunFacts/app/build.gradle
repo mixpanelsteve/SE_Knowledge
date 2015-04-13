@@ -20,5 +20,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(dir: 'libs', include: ['*.jar']);
+    compile "com.mixpanel.android:mixpanel-android:4.5.3";
 }
