@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FactBook.h"
 #import "ColorWheel.h"
+#import "Mixpanel.h"
 
 @interface ViewController ()
 
@@ -42,6 +43,7 @@
     self.view.backgroundColor = randomColor;
     self.funFactButton.tintColor = randomColor;
     self.funFactLabel.text = [self.factBook randomFact];
+    [[Mixpanel sharedInstance] track:@"View Fact"];
 }
 
 

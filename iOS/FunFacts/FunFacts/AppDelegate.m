@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Mixpanel.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,10 @@
     // Override point for customization after application launch.
     
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
+    [Mixpanel sharedInstanceWithToken:@"orienwu"];
+    [[Mixpanel sharedInstance] track:@"App Open"];
+    [[Mixpanel sharedInstance] identify:[Mixpanel sharedInstance].distinctId];
+    [[Mixpanel sharedInstance].people set:@{@"Test": @"Test Value"}];
     
     return YES;
 }
@@ -35,6 +40,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [[Mixpanel sharedInstance] track:@"App Open"];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
